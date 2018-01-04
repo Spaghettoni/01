@@ -1,0 +1,151 @@
+object Form1: TForm1
+  Left = 777
+  Height = 528
+  Top = 184
+  Width = 634
+  Caption = 'Interná databáza tovaru'
+  ClientHeight = 528
+  ClientWidth = 634
+  OnCreate = FormCreate
+  LCLVersion = '1.4.0.4'
+  object Memo1: TMemo
+    Left = 32
+    Height = 337
+    Top = 120
+    Width = 288
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 336
+    Height = 23
+    Hint = 'Kód/Názov tovaru'
+    Top = 122
+    Width = 160
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+  end
+  object Vyhladat: TButton
+    Left = 504
+    Height = 25
+    Top = 120
+    Width = 75
+    Caption = 'Vyhľadať'
+    OnClick = VyhladatClick
+    TabOrder = 2
+  end
+  object Edit2: TEdit
+    Left = 416
+    Height = 23
+    Top = 280
+    Width = 80
+    TabOrder = 3
+  end
+  object Edit3: TEdit
+    Left = 416
+    Height = 23
+    Top = 304
+    Width = 80
+    TabOrder = 4
+  end
+  object Pridat: TButton
+    Left = 504
+    Height = 25
+    Top = 214
+    Width = 75
+    Caption = 'Pridať'
+    OnClick = PridatClick
+    TabOrder = 5
+  end
+  object Vymazat: TButton
+    Left = 336
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = 'Vymazať'
+    OnClick = VymazatClick
+    TabOrder = 6
+  end
+  object Button4: TButton
+    Left = 245
+    Height = 25
+    Top = 86
+    Width = 75
+    Caption = 'Kódu'
+    OnClick = Button4Click
+    TabOrder = 7
+  end
+  object Button5: TButton
+    Left = 173
+    Height = 25
+    Top = 86
+    Width = 75
+    Caption = 'Názvu'
+    OnClick = Button5Click
+    TabOrder = 8
+  end
+  object Label1: TLabel
+    Left = 336
+    Height = 15
+    Top = 280
+    Width = 75
+    Caption = 'Zmeniť tovar :'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 336
+    Height = 15
+    Top = 304
+    Width = 51
+    Caption = 'Na tovar :'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 173
+    Height = 15
+    Top = 66
+    Width = 128
+    Caption = 'Usporiadať tovar podľa :'
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button6: TButton
+    Left = 32
+    Height = 45
+    Top = 66
+    Width = 56
+    Caption = '↻'
+    Color = clGreen
+    Font.Height = -40
+    OnClick = Button6Click
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Edit4: TEdit
+    Left = 336
+    Height = 23
+    Top = 216
+    Width = 80
+    TabOrder = 10
+  end
+  object Edit5: TEdit
+    Left = 416
+    Height = 23
+    Top = 216
+    Width = 80
+    TabOrder = 11
+  end
+  object Button7: TButton
+    Left = 416
+    Height = 25
+    Top = 328
+    Width = 80
+    Caption = 'Zmeniť'
+    OnClick = Button7Click
+    TabOrder = 12
+  end
+end

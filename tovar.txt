@@ -1,0 +1,5 @@
+9
+123456;Klobasa
+225488;Orechy
+979854;Vysavac
+624513;Chlieb
