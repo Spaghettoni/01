@@ -1,5 +1,8 @@
-9
-123456;Klobasa
-225488;Orechy
+7
 979854;Vysavac
-624513;Chlieb
+123546;Cibula
+118549;Hrozno
+154485;Zubná pasta
+165485;Klobasa
+116654;Jablko
+165887;Jaternica

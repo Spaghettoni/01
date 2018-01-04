@@ -1,13 +1,13 @@
 object Form1: TForm1
-  Left = 777
+  Left = 1025
   Height = 528
-  Top = 184
+  Top = 191
   Width = 634
   Caption = 'Interná databáza tovaru'
   ClientHeight = 528
   ClientWidth = 634
   OnCreate = FormCreate
-  LCLVersion = '1.4.0.4'
+  LCLVersion = '1.6.4.0'
   object Memo1: TMemo
     Left = 32
     Height = 337
@@ -21,7 +21,7 @@ object Form1: TForm1
   object Edit1: TEdit
     Left = 336
     Height = 23
-    Hint = 'Kód/Názov tovaru'
+    Hint = 'Kód/Názov tovar'
     Top = 122
     Width = 160
     ParentShowHint = False
@@ -69,22 +69,22 @@ object Form1: TForm1
     OnClick = VymazatClick
     TabOrder = 6
   end
-  object Button4: TButton
+  object sortByCode: TButton
     Left = 245
     Height = 25
     Top = 86
     Width = 75
     Caption = 'Kódu'
-    OnClick = Button4Click
+    OnClick = sortByCodeClick
     TabOrder = 7
   end
-  object Button5: TButton
+  object sortByName: TButton
     Left = 173
     Height = 25
     Top = 86
     Width = 75
     Caption = 'Názvu'
-    OnClick = Button5Click
+    OnClick = sortByNameClick
     TabOrder = 8
   end
   object Label1: TLabel
@@ -113,7 +113,7 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Button6: TButton
+  object Reload: TButton
     Left = 32
     Height = 45
     Top = 66
@@ -121,7 +121,7 @@ object Form1: TForm1
     Caption = '↻'
     Color = clGreen
     Font.Height = -40
-    OnClick = Button6Click
+    OnClick = ReloadClick
     ParentFont = False
     TabOrder = 9
   end
@@ -133,19 +133,43 @@ object Form1: TForm1
     TabOrder = 10
   end
   object Edit5: TEdit
-    Left = 416
+    Left = 424
     Height = 23
     Top = 216
     Width = 80
     TabOrder = 11
   end
-  object Button7: TButton
+  object Zmenit: TButton
     Left = 416
     Height = 25
     Top = 328
     Width = 80
     Caption = 'Zmeniť'
-    OnClick = Button7Click
+    OnClick = ZmenitClick
     TabOrder = 12
+  end
+  object Label4: TLabel
+    Left = 424
+    Height = 15
+    Top = 408
+    Width = 34
+    Caption = 'Label4'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 424
+    Height = 15
+    Top = 384
+    Width = 34
+    Caption = 'Label5'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 424
+    Height = 15
+    Top = 436
+    Width = 34
+    Caption = 'Label6'
+    ParentColor = False
   end
 end
