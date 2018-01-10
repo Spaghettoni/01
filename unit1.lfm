@@ -23,13 +23,13 @@ object Form1: TForm1
     Height = 23
     Hint = 'Kód/Názov tovar'
     Top = 122
-    Width = 160
+    Width = 168
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
   end
   object Vyhladat: TButton
-    Left = 504
+    Left = 512
     Height = 25
     Top = 120
     Width = 75
@@ -38,21 +38,21 @@ object Form1: TForm1
     TabOrder = 2
   end
   object Edit2: TEdit
-    Left = 416
+    Left = 424
     Height = 23
     Top = 280
     Width = 80
     TabOrder = 3
   end
   object Edit3: TEdit
-    Left = 416
+    Left = 424
     Height = 23
     Top = 304
     Width = 80
     TabOrder = 4
   end
   object Pridat: TButton
-    Left = 504
+    Left = 512
     Height = 25
     Top = 214
     Width = 75
@@ -140,7 +140,7 @@ object Form1: TForm1
     TabOrder = 11
   end
   object Zmenit: TButton
-    Left = 416
+    Left = 424
     Height = 25
     Top = 328
     Width = 80

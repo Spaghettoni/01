@@ -1,8 +1,9 @@
-7
-979854;Vysavac
-123546;Cibula
-118549;Hrozno
-154485;Zubná pasta
+8
+154485;Zubna pasta
 165485;Klobasa
-116654;Jablko
-165887;Jaternica
+165887;Domestos
+114785;Domestos
+157798;Domestos
+122246;12
+135412;Chlieb
+149632;Zmrzlina
