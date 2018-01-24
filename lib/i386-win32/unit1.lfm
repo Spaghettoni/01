@@ -1,29 +1,48 @@
 object Form1: TForm1
-  Left = 777
+  Left = 611
   Height = 528
-  Top = 184
+  Top = 274
   Width = 634
   Caption = 'Interná databáza tovaru'
   ClientHeight = 528
   ClientWidth = 634
+  Color = clSkyBlue
   OnCreate = FormCreate
   LCLVersion = '1.4.0.4'
   object Memo1: TMemo
     Left = 32
-    Height = 337
+    Height = 393
     Top = 120
     Width = 288
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     Lines.Strings = (
       'Memo1'
     )
+    ParentFont = False
     TabOrder = 0
   end
   object Edit1: TEdit
     Left = 336
     Height = 23
-    Hint = 'Kód/Názov tovaru'
-    Top = 122
-    Width = 160
+    Hint = 'Kód/Názov tovar'
+    Top = 138
+    Width = 168
+    HelpType = htKeyword
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    HideSelection = False
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
@@ -31,60 +50,104 @@ object Form1: TForm1
   object Vyhladat: TButton
     Left = 504
     Height = 25
-    Top = 120
+    Top = 136
     Width = 75
     Caption = 'Vyhľadať'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = VyhladatClick
+    ParentFont = False
     TabOrder = 2
   end
   object Edit2: TEdit
-    Left = 416
+    Left = 336
     Height = 23
-    Top = 280
+    Top = 296
     Width = 80
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
     TabOrder = 3
   end
   object Edit3: TEdit
-    Left = 416
+    Left = 424
     Height = 23
-    Top = 304
+    Top = 296
     Width = 80
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
     TabOrder = 4
   end
   object Pridat: TButton
     Left = 504
     Height = 25
-    Top = 214
+    Top = 230
     Width = 75
     Caption = 'Pridať'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = PridatClick
+    ParentFont = False
     TabOrder = 5
   end
   object Vymazat: TButton
     Left = 336
     Height = 25
-    Top = 152
+    Top = 168
     Width = 75
     Caption = 'Vymazať'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     OnClick = VymazatClick
+    ParentFont = False
     TabOrder = 6
   end
-  object Button4: TButton
+  object sortByCode: TButton
     Left = 245
     Height = 25
-    Top = 86
+    Top = 88
     Width = 75
     Caption = 'Kódu'
-    OnClick = Button4Click
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = sortByCodeClick
+    ParentFont = False
     TabOrder = 7
   end
-  object Button5: TButton
+  object sortByName: TButton
     Left = 173
     Height = 25
-    Top = 86
+    Top = 88
     Width = 75
     Caption = 'Názvu'
-    OnClick = Button5Click
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = sortByNameClick
+    ParentFont = False
     TabOrder = 8
   end
   object Label1: TLabel
@@ -96,9 +159,9 @@ object Form1: TForm1
     ParentColor = False
   end
   object Label2: TLabel
-    Left = 336
+    Left = 424
     Height = 15
-    Top = 304
+    Top = 280
     Width = 51
     Caption = 'Na tovar :'
     ParentColor = False
@@ -113,39 +176,113 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Button6: TButton
-    Left = 32
-    Height = 45
-    Top = 66
-    Width = 56
-    Caption = '↻'
-    Color = clGreen
-    Font.Height = -40
-    OnClick = Button6Click
-    ParentFont = False
-    TabOrder = 9
-  end
   object Edit4: TEdit
     Left = 336
     Height = 23
-    Top = 216
+    Top = 232
     Width = 80
-    TabOrder = 10
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 9
   end
   object Edit5: TEdit
-    Left = 416
+    Left = 424
     Height = 23
-    Top = 216
+    Top = 232
     Width = 80
-    TabOrder = 11
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 10
   end
-  object Button7: TButton
-    Left = 416
+  object Zmenit: TButton
+    Left = 504
     Height = 25
-    Top = 328
+    Top = 296
     Width = 80
     Caption = 'Zmeniť'
-    OnClick = Button7Click
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ZmenitClick
+    ParentFont = False
+    TabOrder = 11
+  end
+  object Label4: TLabel
+    Left = 336
+    Height = 15
+    Top = 216
+    Width = 21
+    Caption = 'Kód'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 424
+    Height = 15
+    Top = 216
+    Width = 33
+    Caption = 'Názov'
+    ParentColor = False
+  end
+  object Memo2: TMemo
+    Left = 336
+    Height = 136
+    Top = 376
+    Width = 168
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Lines.Strings = (
+      'Memo2'
+    )
+    ParentFont = False
     TabOrder = 12
+  end
+  object Label6: TLabel
+    Left = 336
+    Height = 15
+    Top = 355
+    Width = 102
+    Caption = 'Databáza obsahuje:'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 336
+    Height = 15
+    Top = 120
+    Width = 98
+    Caption = 'Zadajte kód/názov'
+    ParentColor = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 32
+    Height = 50
+    Top = 56
+    Width = 64
+    Caption = 'Home'
+    Color = clBlack
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial Rounded MT Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = BitBtn1Click
+    ParentFont = False
+    TabOrder = 13
   end
 end

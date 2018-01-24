@@ -1,9 +1,8 @@
-8
-154485;Zubna pasta
-165485;Klobasa
-165887;Domestos
-114785;Domestos
-157798;Domestos
-122246;12
-135412;Chlieb
-149632;Zmrzlina
+7
+155412;Curaprox
+125436;Paprika
+125437;Paradajka
+159618;Kefka
+113768;Jablko
+167619;Jaternica
+139134;Zemla
